@@ -278,7 +278,7 @@ footer {
   cursor: pointer;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 740px) {
   .wrapper {
     display: none;
   }

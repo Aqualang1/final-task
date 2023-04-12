@@ -9,6 +9,10 @@ body {
   background: #F5F5FA;
 }
 
+.mobile-container {
+  display: none;
+}
+
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -44,7 +48,7 @@ header {
 
 .top-panel {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 3vw;
   color: #B3B3BA;
@@ -143,7 +147,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 1vw;
+  gap: 4vw;
 }
 .publications .window .area {
   padding: 1vw;
@@ -154,6 +158,9 @@ header {
   border-radius: 8px;
   max-width: 26.25rem;
   background: #FFFFFF;
+}
+.publications .window .item img {
+  max-width: 100%;
 }
 .publications .window .item .heading {
   font-weight: 700;
@@ -242,20 +249,38 @@ header {
   color: #B3B3BA;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 912px) {
+  .columns {
+    flex-direction: column;
+    padding: 5vw 5vw;
+    gap: 3rem;
+  }
   .footer {
     display: flex;
-    flex-direction: column;
-    margin: 3vw 3vw;
-    border-top: #E6E6F0 2px solid;
     padding: 3vw;
-    text-align: center;
-  }
-  .footer .top,
-  .footer .bottom {
-    display: flex;
+    background: #F5F5FA;
+    margin-top: 3vw;
+    flex-direction: column;
     align-items: center;
-    gap: 1vw;
+    gap: 3rem;
+  }
+  .wrapper {
+    display: flex;
+    padding: 2vh 3vw;
+    background: #FFFFFF;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 520px) {
+  .wrapper {
+    display: none;
+  }
+  .footer .bottom,
+  .footer .top {
+    flex-direction: column;
+  }
+  .footer .dot {
+    display: none;
   }
   .box {
     display: flex;
@@ -283,5 +308,51 @@ header {
     font-weight: 700;
     font-size: 1rem;
     color: #46466E;
+  }
+  .mobile-container {
+    color: white;
+    border-radius: 10px;
+    display: block;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #323264;
+  }
+  .logo .red {
+    color: #F0145A;
+  }
+  .topnav {
+    overflow: hidden;
+    position: relative;
+  }
+  .topnav #myLinks {
+    display: none;
+  }
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    border: 1px solid black;
+  }
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .active {
+    color: white;
+  }
+  .contacts > .item {
+    list-style-type: none;
   }
 }/*# sourceMappingURL=publications.css.map */

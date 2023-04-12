@@ -79,13 +79,42 @@
             </div>
             <nav class="header__bottom-panel bottom-panel">
                 <ul class="bottom-panel__pages pages">
-                    <li class="pages__item item"><a href="#">about us</a></li>
-                    <li class="pages__item item"><a href="#">services</a></li>
-                    <li class="pages__item item"><a href="#">team</a></li>
-                    <li class="pages__item item--selected"><a href="#"><u>publications</u></a></li>
-                    <li class="pages__item item"><a href="#">contact</a></li>
+                    <li class="pages__item item"><a href="./about.html">about us</a></li>
+                    <li class="pages__item item"><a href="./services.html">services</a></li>
+                    <li class="pages__item item"><a href="./about.html">team</a></li>
+                    <li class="pages__item item--selected"><a href="./publications.html"><u>publications</u></a></li>
+                    <li class="pages__item item"><a href="./contact.html">contact</a></li>
                 </ul>
             </nav>
+        </div>
+    </div>
+    <div class="mobile-container">
+        <div class="header__top-panel top-panel">
+            <ul class="top-panel__lang lang">
+                <li class="lang__item item">УК</li>
+                <li class="lang__item item">РУ</li>
+                <li class="lang__item item item--selected">EN</li>
+            </ul>
+            <ul class="top-panel__contacts contacts">
+                <li class="contacts__item item"><b>0800 211 927</b></li>
+            </ul>
+        </div>
+        <div class="topnav">
+            <div class="wrapper__logo logo">
+                <p class="red">h</p>
+                <p>legal</p>
+                <img src="./gallery/Slash.png" alt="Slash">
+                <p>Contact</p>
+            </div>
+            <div id="myLinks">
+                <a href="./about.html">about us</a>
+                <a href="./contact.html"><u>contact</u></a>
+                <a href="./publications.html">publications</a>
+                <a href="./about.html">team</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </div>
     <div class="switch">
@@ -200,6 +229,16 @@
             </div>
         </div>
     </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>

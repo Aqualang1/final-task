@@ -30,6 +30,10 @@ body {
     background: $Grey-Bg;
 }
 
+.mobile-container {
+    display: none;
+}
+
 .wrapper {
     display: flex;
     justify-content: space-between;
@@ -72,7 +76,7 @@ header {
 
 .top-panel {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     // padding: 1rem 1rem;
     gap: 3vw;
@@ -191,7 +195,7 @@ header {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        gap: 1vw;
+        gap: 4vw;
 
         .area {
             padding: 1vw;
@@ -203,6 +207,10 @@ header {
             border-radius: 8px;
             max-width: 26.25rem;
             background: $basic-white;
+
+            img {
+                max-width: 100%
+            }
 
             .heading {
                 @include montserat(700, 1rem);
@@ -296,20 +304,45 @@ header {
     color: $Grey-Text;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 912px) {
+    .columns {
+        flex-direction: column;
+        padding: 5vw 5vw;
+        gap: 3rem;
+    }
+
     .footer {
         display: flex;
-        flex-direction: column;
-        margin: 3vw 3vw;
-        border-top: #E6E6F0 2px solid;
         padding: 3vw;
-        text-align: center;
+        background: #F5F5FA;
+        margin-top: 3vw;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
 
-        .top,
-        .bottom {
-            display: flex;
-            align-items: center;
-            gap: 1vw;
+    .wrapper {
+        display: flex;
+        padding: 2vh 3vw;
+        background: #FFFFFF;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .wrapper {
+        display: none;
+    }
+
+    .footer {
+
+        .bottom,
+        .top {
+            flex-direction: column;
+        }
+
+        .dot {
+            display: none;
         }
     }
 
@@ -340,5 +373,68 @@ header {
             @include montserat(700, 1rem);
             color: #46466E;
         }
+    }
+
+    .mobile-container {
+        // max-width: 480px;
+        // margin: auto;
+        // background-color: #555;
+        // height: 500px;
+        color: white;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        @include montserat(400, 1.5rem);
+        color: $main-regular;
+
+        .red {
+            color: $Accent;
+        }
+    }
+
+    .topnav {
+        overflow: hidden;
+        // background-color: #333;
+        position: relative;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        border: 1px solid black;
+    }
+
+    .topnav a.icon {
+        // background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .active {
+        // background-color: #04AA6D;
+        color: white;
+    }
+
+    .contacts>.item {
+        list-style-type: none;
+
     }
 }
