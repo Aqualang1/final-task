@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__logo logo">
+            <p class="red">h</p>
+            <p>legal</p>
+            <img src="./gallery/Slash.png" alt="Slash">
+            <p>Contact</p>
+        </div>
+        <div class="header">
+
+            <div class="header__top-panel top-panel">
+                <ul class="top-panel__lang lang">
+                    <li class="lang__item item">УК</li>
+                    <li class="lang__item item">РУ</li>
+                    <li class="lang__item item item--selected">EN</li>
+                </ul>
+                <ul class="top-panel__contacts contacts">
+                    <li class="contacts__item item">Kyiv, Mechnikova str, 14/1</li>
+                    <li class="contacts__item item"><b>0800 211 927</b></li>
+                    <li class="contacts__item item">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                fill="white" />
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <nav class="header__bottom-panel bottom-panel">
+                <ul class="bottom-panel__pages pages">
+                    <li class="pages__item item"><a href="./about.html">about us</a></li>
+                    <li class="pages__item item"><a href="./services.html">services</a></li>
+                    <li class="pages__item item"><a href="./about.html">team</a></li>
+                    <li class="pages__item item"><a href="./publications.html">publications</a></li>
+                    <li class="pages__item item--selected"><a href="./contact.html"><u>contact</u></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="mobile-container">
+        <div class="header__top-panel top-panel">
+            <ul class="top-panel__lang lang">
+                <li class="lang__item item">УК</li>
+                <li class="lang__item item">РУ</li>
+                <li class="lang__item item item--selected">EN</li>
+            </ul>
+            <ul class="top-panel__contacts contacts">
+                <li class="contacts__item item"><b>0800 211 927</b></li>
+            </ul>
+        </div>
+        <div class="topnav">
+            <div class="wrapper__logo logo">
+                <p class="red">h</p>
+                <p>legal</p>
+                <img src="./gallery/Slash.png" alt="Slash">
+                <p>Contact</p>
+            </div>
+            <div id="myLinks">
+                <a href="./about.html">about us</a>
+                <a href="./contact.html"><u>contact</u></a>
+                <a href="./publications.html">publications</a>
+                <a href="./about.html">team</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <section>
+        <div class="columns">
+            <div class="columns__adress adress">
+                <p class="adress__city city">Kyiv, <br> Mechnikova str, 14</p>
+                <p class="adress__phone phone">0800 211 927</p>
+                <p class="adress__mail mail">contact@forstudy.space</p>
+                <div class="adress__social social">
+                    <span class="social__fb">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                fill="white" />
+                        </svg>
+                    </span>
+                    <span class="social__text text">
+                        Our page <br> on facebook
+                    </span>
+                </div>
+            </div>
+            <form>
+                <div class="columns__massage message">
+                    <h1 class="message__heading heading">We would like to help you</h1>
+                    <input type="text" placeholder="Name">
+                    <input type="text" class="big" placeholder="Message">
+                    <p class="message__how how">How to answer you?</p>
+                    <input type="text" placeholder="Phone number">
+                    <input type="text" placeholder="Email">
+                    <button class="message__btn btn">Send message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footer__box box">
+                <span class="box">
+                    <div class="box__top top">Kyiv, Mechnikova str, 14/1
+                        <span class="dot"></span>
+                        <p class="top__map map">On map</p>
+                    </div>
+                    <div class="box__bottom bottom">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                fill="#24A3FF" />
+                        </svg>
+                        <span class="dot"></span>
+                        <p class="bottom__phone phone">0800 211 927</p>
+                        <span class="dot"></span>
+                        <p class="map">contact@forstudy.space</p>
+                    </div>
+                </span>
+            </div>
+            <div class="footer__aside aside">
+                <p>© 2021 HLEGAL Law company, LLC</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
